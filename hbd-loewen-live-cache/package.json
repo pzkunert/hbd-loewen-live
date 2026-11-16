@@ -1,0 +1,18 @@
+{
+  "name": "hbd-loewen-live-cache",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mobile HBD-Löwen-Live-Webapp mit entkoppeltem JSON-Cache",
+  "scripts": {
+    "fetch": "node scripts/fetch-data.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node scripts/check-project.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

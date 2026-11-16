@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "waiting",
+  "generatedAt": null,
+  "lastSuccessfulAt": null,
+  "message": "Der erste Datenabruf wurde noch nicht ausgeführt.",
+  "source": "cache",
+  "counts": { "matches": 0, "live": 0, "events": 0, "standings": 0 }
+}

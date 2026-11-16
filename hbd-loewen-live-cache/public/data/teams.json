@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": null,
+  "club": {
+    "name": "HBD Löwen Oberberg",
+    "slug": "0cxs2qb",
+    "sourceUrl": "https://www.handball.net/club/0cxs2qb"
+  },
+  "teams": [
+    { "id": "74318", "label": "Damen 1", "category": "Erwachsene", "phaseIds": [] },
+    { "id": "63690", "label": "Herren 1", "category": "Erwachsene", "phaseIds": [] },
+    { "id": "63689", "label": "Herren 2", "category": "Erwachsene", "phaseIds": [] },
+    { "id": "63688", "label": "Herren 3", "category": "Erwachsene", "phaseIds": [] },
+    { "id": "63693", "label": "Damen", "category": "Erwachsene", "phaseIds": [] },
+    { "id": "95240", "label": "E-Jugend", "category": "Jugend", "phaseIds": [] },
+    { "id": "95283", "label": "mC-Jugend", "category": "Jugend", "phaseIds": [] },
+    { "id": "95301", "label": "wC-Jugend", "category": "Jugend", "phaseIds": [] },
+    { "id": "95312", "label": "wB-Jugend", "category": "Jugend", "phaseIds": [] },
+    { "id": "95315", "label": "mB-Jugend", "category": "Jugend", "phaseIds": [] },
+    { "id": "63686", "label": "E-Jugend 2", "category": "Jugend", "phaseIds": [] },
+    { "id": "63691", "label": "Jugend 63691", "category": "Jugend", "phaseIds": [] },
+    { "id": "93654", "label": "Jugend 93654", "category": "Jugend", "phaseIds": [] }
+  ]
+}

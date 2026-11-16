@@ -1,0 +1,28 @@
+{
+  "club": {
+    "name": "HBD Löwen Oberberg",
+    "slug": "0cxs2qb",
+    "apiClubId": "0cxs2qb",
+    "sourceUrl": "https://www.handball.net/club/0cxs2qb"
+  },
+  "season": {
+    "id": "2627",
+    "from": "2026-07-01",
+    "to": "2027-06-30"
+  },
+  "teams": [
+    { "id": "74318", "label": "Damen 1", "category": "Erwachsene", "standings": true },
+    { "id": "63690", "label": "Herren 1", "category": "Erwachsene", "standings": true },
+    { "id": "63689", "label": "Herren 2", "category": "Erwachsene", "standings": true },
+    { "id": "63688", "label": "Herren 3", "category": "Erwachsene", "standings": true },
+    { "id": "63693", "label": "Damen", "category": "Erwachsene", "standings": true },
+    { "id": "95240", "label": "E-Jugend", "category": "Jugend", "standings": true },
+    { "id": "95283", "label": "mC-Jugend", "category": "Jugend", "standings": true },
+    { "id": "95301", "label": "wC-Jugend", "category": "Jugend", "standings": true },
+    { "id": "95312", "label": "wB-Jugend", "category": "Jugend", "standings": true },
+    { "id": "95315", "label": "mB-Jugend", "category": "Jugend", "standings": true },
+    { "id": "63686", "label": "E-Jugend 2", "category": "Jugend", "standings": true },
+    { "id": "63691", "label": "Jugend 63691", "category": "Jugend", "standings": true },
+    { "id": "93654", "label": "Jugend 93654", "category": "Jugend", "standings": true }
+  ]
+}
