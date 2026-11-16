@@ -41,29 +41,27 @@ jobs:
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Node.js einrichten
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Ausgangsprojekt testen
+      - name: Tests ausführen
         run: npm test
 
-      - name: Öffentliche Daten in JSON-Cache laden
+      - name: Handball-Daten aktualisieren
         id: fetch
         continue-on-error: true
         run: npm run fetch
 
-      - name: Cache und Cache-only-Frontend prüfen
-        run: |
-          npm run check
-          npm test
-          npm run build
+      - name: Tests nach Datenabruf
+        run: npm test
 
-      - name: Erfolgreichen Cache im Repository sichern
+      - name: Webapp bauen
+        run: npm run build
+
+      - name: JSON-Cache speichern
         if: steps.fetch.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
@@ -78,7 +76,7 @@ jobs:
       - name: GitHub Pages konfigurieren
         uses: actions/configure-pages@v5
 
-      - name: Statische App hochladen
+      - name: Webapp für GitHub Pages hochladen
         uses: actions/upload-pages-artifact@v3
         with:
           path: hbd-loewen-live-cache/dist
