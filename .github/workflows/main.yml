@@ -2,8 +2,11 @@ name: Daten aktualisieren und GitHub Pages veröffentlichen
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+
   workflow_dispatch:
+
   schedule:
     - cron: "*/5 * * * *"
 
@@ -26,9 +29,15 @@ env:
 jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: hbd-loewen-live-cache
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
       - name: Repository auschecken
         uses: actions/checkout@v4
@@ -60,6 +69,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data/*.json
+
           if ! git diff --cached --quiet; then
             git commit -m "data: Cache automatisch aktualisieren"
             git push
@@ -71,7 +81,7 @@ jobs:
       - name: Statische App hochladen
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: hbd-loewen-live-cache/dist
 
       - name: GitHub Pages veröffentlichen
         id: deployment
